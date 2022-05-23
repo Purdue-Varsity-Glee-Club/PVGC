@@ -1,0 +1,767 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77B6B3522108FEF891923355 /* Pods_PVGC_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46561A48B4F73FC75F52B737 /* Pods_PVGC_AppTests.framework */; };
+		A6C3AB89A7E7B03B01088BB9 /* Pods_PVGC_App_PVGC_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9AD280281395F1244C0E66 /* Pods_PVGC_App_PVGC_AppUITests.framework */; };
+		B7BB32D35A9675A6A163F126 /* Pods_PVGC_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B15E4942C4C6CE696AE4D8 /* Pods_PVGC_App.framework */; };
+		F71B9FED283714D4002F4547 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71B9FEC283714D4002F4547 /* RegisterViewController.swift */; };
+		F72B4E152835CC4000B41606 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B4E142835CC4000B41606 /* AppDelegate.swift */; };
+		F72B4E172835CC4000B41606 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B4E162835CC4000B41606 /* SceneDelegate.swift */; };
+		F72B4E192835CC4000B41606 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B4E182835CC4000B41606 /* ViewController.swift */; };
+		F72B4E1C2835CC4000B41606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72B4E1A2835CC4000B41606 /* Main.storyboard */; };
+		F72B4E1E2835CC4100B41606 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F72B4E1D2835CC4100B41606 /* Assets.xcassets */; };
+		F72B4E212835CC4100B41606 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72B4E1F2835CC4100B41606 /* LaunchScreen.storyboard */; };
+		F72B4E2C2835CC4100B41606 /* PVGC_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B4E2B2835CC4100B41606 /* PVGC_AppTests.swift */; };
+		F72B4E362835CC4100B41606 /* PVGC_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B4E352835CC4100B41606 /* PVGC_AppUITests.swift */; };
+		F72B4E382835CC4100B41606 /* PVGC_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B4E372835CC4100B41606 /* PVGC_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F72B4E282835CC4100B41606 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F72B4E092835CC4000B41606 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F72B4E102835CC4000B41606;
+			remoteInfo = "PVGC App";
+		};
+		F72B4E322835CC4100B41606 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F72B4E092835CC4000B41606 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F72B4E102835CC4000B41606;
+			remoteInfo = "PVGC App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16BF31664E833DFDF3FD8EAE /* Pods-PVGC AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PVGC AppTests.release.xcconfig"; path = "Target Support Files/Pods-PVGC AppTests/Pods-PVGC AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		1EF16B2892C8CB8B0F6AC6B7 /* Pods-PVGC App-PVGC AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PVGC App-PVGC AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-PVGC App-PVGC AppUITests/Pods-PVGC App-PVGC AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		46561A48B4F73FC75F52B737 /* Pods_PVGC_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PVGC_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80B15E4942C4C6CE696AE4D8 /* Pods_PVGC_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PVGC_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AA6FB2A5EA60646C6D2460A /* Pods-PVGC App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PVGC App.debug.xcconfig"; path = "Target Support Files/Pods-PVGC App/Pods-PVGC App.debug.xcconfig"; sourceTree = "<group>"; };
+		9FD972876191979AAC2F3451 /* Pods-PVGC App-PVGC AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PVGC App-PVGC AppUITests.release.xcconfig"; path = "Target Support Files/Pods-PVGC App-PVGC AppUITests/Pods-PVGC App-PVGC AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DF9AD280281395F1244C0E66 /* Pods_PVGC_App_PVGC_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PVGC_App_PVGC_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F29664649E3AA66614D6A79A /* Pods-PVGC AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PVGC AppTests.debug.xcconfig"; path = "Target Support Files/Pods-PVGC AppTests/Pods-PVGC AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F340EE54F3148689560FA921 /* Pods-PVGC App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PVGC App.release.xcconfig"; path = "Target Support Files/Pods-PVGC App/Pods-PVGC App.release.xcconfig"; sourceTree = "<group>"; };
+		F71B9FEC283714D4002F4547 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F72B4E112835CC4000B41606 /* PVGC App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PVGC App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F72B4E142835CC4000B41606 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F72B4E162835CC4000B41606 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F72B4E182835CC4000B41606 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F72B4E1B2835CC4000B41606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F72B4E1D2835CC4100B41606 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F72B4E202835CC4100B41606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F72B4E222835CC4100B41606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F72B4E272835CC4100B41606 /* PVGC AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PVGC AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F72B4E2B2835CC4100B41606 /* PVGC_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVGC_AppTests.swift; sourceTree = "<group>"; };
+		F72B4E312835CC4100B41606 /* PVGC AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PVGC AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F72B4E352835CC4100B41606 /* PVGC_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVGC_AppUITests.swift; sourceTree = "<group>"; };
+		F72B4E372835CC4100B41606 /* PVGC_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVGC_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F72B4E0E2835CC4000B41606 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7BB32D35A9675A6A163F126 /* Pods_PVGC_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F72B4E242835CC4100B41606 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77B6B3522108FEF891923355 /* Pods_PVGC_AppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F72B4E2E2835CC4100B41606 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6C3AB89A7E7B03B01088BB9 /* Pods_PVGC_App_PVGC_AppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4357CF3F8CBAD705BF3C5611 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80B15E4942C4C6CE696AE4D8 /* Pods_PVGC_App.framework */,
+				DF9AD280281395F1244C0E66 /* Pods_PVGC_App_PVGC_AppUITests.framework */,
+				46561A48B4F73FC75F52B737 /* Pods_PVGC_AppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		921B43EED3A1F206D37DE48F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8AA6FB2A5EA60646C6D2460A /* Pods-PVGC App.debug.xcconfig */,
+				F340EE54F3148689560FA921 /* Pods-PVGC App.release.xcconfig */,
+				1EF16B2892C8CB8B0F6AC6B7 /* Pods-PVGC App-PVGC AppUITests.debug.xcconfig */,
+				9FD972876191979AAC2F3451 /* Pods-PVGC App-PVGC AppUITests.release.xcconfig */,
+				F29664649E3AA66614D6A79A /* Pods-PVGC AppTests.debug.xcconfig */,
+				16BF31664E833DFDF3FD8EAE /* Pods-PVGC AppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F72B4E082835CC4000B41606 = {
+			isa = PBXGroup;
+			children = (
+				F72B4E132835CC4000B41606 /* PVGC App */,
+				F72B4E2A2835CC4100B41606 /* PVGC AppTests */,
+				F72B4E342835CC4100B41606 /* PVGC AppUITests */,
+				F72B4E122835CC4000B41606 /* Products */,
+				921B43EED3A1F206D37DE48F /* Pods */,
+				4357CF3F8CBAD705BF3C5611 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F72B4E122835CC4000B41606 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F72B4E112835CC4000B41606 /* PVGC App.app */,
+				F72B4E272835CC4100B41606 /* PVGC AppTests.xctest */,
+				F72B4E312835CC4100B41606 /* PVGC AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F72B4E132835CC4000B41606 /* PVGC App */ = {
+			isa = PBXGroup;
+			children = (
+				F72B4E142835CC4000B41606 /* AppDelegate.swift */,
+				F72B4E162835CC4000B41606 /* SceneDelegate.swift */,
+				F72B4E182835CC4000B41606 /* ViewController.swift */,
+				F72B4E1A2835CC4000B41606 /* Main.storyboard */,
+				F71B9FEC283714D4002F4547 /* RegisterViewController.swift */,
+				F72B4E1D2835CC4100B41606 /* Assets.xcassets */,
+				F72B4E1F2835CC4100B41606 /* LaunchScreen.storyboard */,
+				F72B4E222835CC4100B41606 /* Info.plist */,
+			);
+			path = "PVGC App";
+			sourceTree = "<group>";
+		};
+		F72B4E2A2835CC4100B41606 /* PVGC AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F72B4E2B2835CC4100B41606 /* PVGC_AppTests.swift */,
+			);
+			path = "PVGC AppTests";
+			sourceTree = "<group>";
+		};
+		F72B4E342835CC4100B41606 /* PVGC AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F72B4E352835CC4100B41606 /* PVGC_AppUITests.swift */,
+				F72B4E372835CC4100B41606 /* PVGC_AppUITestsLaunchTests.swift */,
+			);
+			path = "PVGC AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F72B4E102835CC4000B41606 /* PVGC App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F72B4E3B2835CC4100B41606 /* Build configuration list for PBXNativeTarget "PVGC App" */;
+			buildPhases = (
+				74871442386C219923A34C43 /* [CP] Check Pods Manifest.lock */,
+				F72B4E0D2835CC4000B41606 /* Sources */,
+				F72B4E0E2835CC4000B41606 /* Frameworks */,
+				F72B4E0F2835CC4000B41606 /* Resources */,
+				3D504A2BD835A06916CE6F09 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PVGC App";
+			productName = "PVGC App";
+			productReference = F72B4E112835CC4000B41606 /* PVGC App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F72B4E262835CC4100B41606 /* PVGC AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F72B4E3E2835CC4100B41606 /* Build configuration list for PBXNativeTarget "PVGC AppTests" */;
+			buildPhases = (
+				5862F43345622549E4702303 /* [CP] Check Pods Manifest.lock */,
+				F72B4E232835CC4100B41606 /* Sources */,
+				F72B4E242835CC4100B41606 /* Frameworks */,
+				F72B4E252835CC4100B41606 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F72B4E292835CC4100B41606 /* PBXTargetDependency */,
+			);
+			name = "PVGC AppTests";
+			productName = "PVGC AppTests";
+			productReference = F72B4E272835CC4100B41606 /* PVGC AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F72B4E302835CC4100B41606 /* PVGC AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F72B4E412835CC4100B41606 /* Build configuration list for PBXNativeTarget "PVGC AppUITests" */;
+			buildPhases = (
+				DF3664718B51B2F413FC8B23 /* [CP] Check Pods Manifest.lock */,
+				F72B4E2D2835CC4100B41606 /* Sources */,
+				F72B4E2E2835CC4100B41606 /* Frameworks */,
+				F72B4E2F2835CC4100B41606 /* Resources */,
+				9C3D63B0118564D9AC58419B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F72B4E332835CC4100B41606 /* PBXTargetDependency */,
+			);
+			name = "PVGC AppUITests";
+			productName = "PVGC AppUITests";
+			productReference = F72B4E312835CC4100B41606 /* PVGC AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F72B4E092835CC4000B41606 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					F72B4E102835CC4000B41606 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					F72B4E262835CC4100B41606 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = F72B4E102835CC4000B41606;
+					};
+					F72B4E302835CC4100B41606 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = F72B4E102835CC4000B41606;
+					};
+				};
+			};
+			buildConfigurationList = F72B4E0C2835CC4000B41606 /* Build configuration list for PBXProject "PVGC App" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F72B4E082835CC4000B41606;
+			productRefGroup = F72B4E122835CC4000B41606 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F72B4E102835CC4000B41606 /* PVGC App */,
+				F72B4E262835CC4100B41606 /* PVGC AppTests */,
+				F72B4E302835CC4100B41606 /* PVGC AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F72B4E0F2835CC4000B41606 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F72B4E212835CC4100B41606 /* LaunchScreen.storyboard in Resources */,
+				F72B4E1E2835CC4100B41606 /* Assets.xcassets in Resources */,
+				F72B4E1C2835CC4000B41606 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F72B4E252835CC4100B41606 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F72B4E2F2835CC4100B41606 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D504A2BD835A06916CE6F09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PVGC App/Pods-PVGC App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PVGC App/Pods-PVGC App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PVGC App/Pods-PVGC App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5862F43345622549E4702303 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PVGC AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74871442386C219923A34C43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PVGC App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C3D63B0118564D9AC58419B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PVGC App-PVGC AppUITests/Pods-PVGC App-PVGC AppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PVGC App-PVGC AppUITests/Pods-PVGC App-PVGC AppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PVGC App-PVGC AppUITests/Pods-PVGC App-PVGC AppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF3664718B51B2F413FC8B23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PVGC App-PVGC AppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F72B4E0D2835CC4000B41606 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F72B4E192835CC4000B41606 /* ViewController.swift in Sources */,
+				F72B4E152835CC4000B41606 /* AppDelegate.swift in Sources */,
+				F72B4E172835CC4000B41606 /* SceneDelegate.swift in Sources */,
+				F71B9FED283714D4002F4547 /* RegisterViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F72B4E232835CC4100B41606 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F72B4E2C2835CC4100B41606 /* PVGC_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F72B4E2D2835CC4100B41606 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F72B4E382835CC4100B41606 /* PVGC_AppUITestsLaunchTests.swift in Sources */,
+				F72B4E362835CC4100B41606 /* PVGC_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F72B4E292835CC4100B41606 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F72B4E102835CC4000B41606 /* PVGC App */;
+			targetProxy = F72B4E282835CC4100B41606 /* PBXContainerItemProxy */;
+		};
+		F72B4E332835CC4100B41606 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F72B4E102835CC4000B41606 /* PVGC App */;
+			targetProxy = F72B4E322835CC4100B41606 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F72B4E1A2835CC4000B41606 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F72B4E1B2835CC4000B41606 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F72B4E1F2835CC4100B41606 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F72B4E202835CC4100B41606 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F72B4E392835CC4100B41606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F72B4E3A2835CC4100B41606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F72B4E3C2835CC4100B41606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AA6FB2A5EA60646C6D2460A /* Pods-PVGC App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42GXJBRR46;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PVGC App/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "eliel.PVGC-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F72B4E3D2835CC4100B41606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F340EE54F3148689560FA921 /* Pods-PVGC App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42GXJBRR46;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PVGC App/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "eliel.PVGC-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F72B4E3F2835CC4100B41606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F29664649E3AA66614D6A79A /* Pods-PVGC AppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42GXJBRR46;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "eliel.PVGC-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PVGC App.app/PVGC App";
+			};
+			name = Debug;
+		};
+		F72B4E402835CC4100B41606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16BF31664E833DFDF3FD8EAE /* Pods-PVGC AppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42GXJBRR46;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "eliel.PVGC-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PVGC App.app/PVGC App";
+			};
+			name = Release;
+		};
+		F72B4E422835CC4100B41606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EF16B2892C8CB8B0F6AC6B7 /* Pods-PVGC App-PVGC AppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42GXJBRR46;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "eliel.PVGC-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PVGC App";
+			};
+			name = Debug;
+		};
+		F72B4E432835CC4100B41606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FD972876191979AAC2F3451 /* Pods-PVGC App-PVGC AppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42GXJBRR46;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "eliel.PVGC-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PVGC App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F72B4E0C2835CC4000B41606 /* Build configuration list for PBXProject "PVGC App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F72B4E392835CC4100B41606 /* Debug */,
+				F72B4E3A2835CC4100B41606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F72B4E3B2835CC4100B41606 /* Build configuration list for PBXNativeTarget "PVGC App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F72B4E3C2835CC4100B41606 /* Debug */,
+				F72B4E3D2835CC4100B41606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F72B4E3E2835CC4100B41606 /* Build configuration list for PBXNativeTarget "PVGC AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F72B4E3F2835CC4100B41606 /* Debug */,
+				F72B4E402835CC4100B41606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F72B4E412835CC4100B41606 /* Build configuration list for PBXNativeTarget "PVGC AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F72B4E422835CC4100B41606 /* Debug */,
+				F72B4E432835CC4100B41606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F72B4E092835CC4000B41606 /* Project object */;
+}
