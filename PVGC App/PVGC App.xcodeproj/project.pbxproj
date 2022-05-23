@@ -11,6 +11,8 @@
 		A6C3AB89A7E7B03B01088BB9 /* Pods_PVGC_App_PVGC_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9AD280281395F1244C0E66 /* Pods_PVGC_App_PVGC_AppUITests.framework */; };
 		B7BB32D35A9675A6A163F126 /* Pods_PVGC_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B15E4942C4C6CE696AE4D8 /* Pods_PVGC_App.framework */; };
 		F71B9FED283714D4002F4547 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71B9FEC283714D4002F4547 /* RegisterViewController.swift */; };
+		F71B9FEF283C086D002F4547 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71B9FEE283C086D002F4547 /* CalendarViewController.swift */; };
+		F71B9FF1283C1104002F4547 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71B9FF0283C1104002F4547 /* EventCell.swift */; };
 		F72B4E152835CC4000B41606 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B4E142835CC4000B41606 /* AppDelegate.swift */; };
 		F72B4E172835CC4000B41606 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B4E162835CC4000B41606 /* SceneDelegate.swift */; };
 		F72B4E192835CC4000B41606 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B4E182835CC4000B41606 /* ViewController.swift */; };
@@ -50,6 +52,8 @@
 		F29664649E3AA66614D6A79A /* Pods-PVGC AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PVGC AppTests.debug.xcconfig"; path = "Target Support Files/Pods-PVGC AppTests/Pods-PVGC AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F340EE54F3148689560FA921 /* Pods-PVGC App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PVGC App.release.xcconfig"; path = "Target Support Files/Pods-PVGC App/Pods-PVGC App.release.xcconfig"; sourceTree = "<group>"; };
 		F71B9FEC283714D4002F4547 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F71B9FEE283C086D002F4547 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		F71B9FF0283C1104002F4547 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		F72B4E112835CC4000B41606 /* PVGC App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PVGC App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72B4E142835CC4000B41606 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F72B4E162835CC4000B41606 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +149,8 @@
 				F72B4E162835CC4000B41606 /* SceneDelegate.swift */,
 				F72B4E182835CC4000B41606 /* ViewController.swift */,
 				F72B4E1A2835CC4000B41606 /* Main.storyboard */,
+				F71B9FF0283C1104002F4547 /* EventCell.swift */,
+				F71B9FEE283C086D002F4547 /* CalendarViewController.swift */,
 				F71B9FEC283714D4002F4547 /* RegisterViewController.swift */,
 				F72B4E1D2835CC4100B41606 /* Assets.xcassets */,
 				F72B4E1F2835CC4100B41606 /* LaunchScreen.storyboard */,
@@ -409,9 +415,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F71B9FEF283C086D002F4547 /* CalendarViewController.swift in Sources */,
 				F72B4E192835CC4000B41606 /* ViewController.swift in Sources */,
 				F72B4E152835CC4000B41606 /* AppDelegate.swift in Sources */,
 				F72B4E172835CC4000B41606 /* SceneDelegate.swift in Sources */,
+				F71B9FF1283C1104002F4547 /* EventCell.swift in Sources */,
 				F71B9FED283714D4002F4547 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
