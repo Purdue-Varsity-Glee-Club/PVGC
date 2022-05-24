@@ -25,6 +25,8 @@
 		F72B4E2C2835CC4100B41606 /* PVGC_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B4E2B2835CC4100B41606 /* PVGC_AppTests.swift */; };
 		F72B4E362835CC4100B41606 /* PVGC_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B4E352835CC4100B41606 /* PVGC_AppUITests.swift */; };
 		F72B4E382835CC4100B41606 /* PVGC_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B4E372835CC4100B41606 /* PVGC_AppUITestsLaunchTests.swift */; };
+		F75E4D3E283D6E63005D2634 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75E4D3D283D6E63005D2634 /* EventViewController.swift */; };
+		F75E4D40283D73B2005D2634 /* ReportConflictViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75E4D3F283D73B2005D2634 /* ReportConflictViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		F72B4E312835CC4100B41606 /* PVGC AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PVGC AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72B4E352835CC4100B41606 /* PVGC_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVGC_AppUITests.swift; sourceTree = "<group>"; };
 		F72B4E372835CC4100B41606 /* PVGC_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVGC_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F75E4D3D283D6E63005D2634 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		F75E4D3F283D73B2005D2634 /* ReportConflictViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportConflictViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,8 +178,10 @@
 				F72B4E162835CC4000B41606 /* SceneDelegate.swift */,
 				F72B4E182835CC4000B41606 /* ViewController.swift */,
 				F72B4E1A2835CC4000B41606 /* Main.storyboard */,
+				F75E4D3F283D73B2005D2634 /* ReportConflictViewController.swift */,
 				F71B9FF0283C1104002F4547 /* EventCell.swift */,
 				F71B9FEE283C086D002F4547 /* CalendarViewController.swift */,
+				F75E4D3D283D6E63005D2634 /* EventViewController.swift */,
 				F71B9FEC283714D4002F4547 /* RegisterViewController.swift */,
 				F72B4E1D2835CC4100B41606 /* Assets.xcassets */,
 				F72B4E1F2835CC4100B41606 /* LaunchScreen.storyboard */,
@@ -445,6 +451,8 @@
 				F72B4E192835CC4000B41606 /* ViewController.swift in Sources */,
 				F72B4E152835CC4000B41606 /* AppDelegate.swift in Sources */,
 				F72B4E172835CC4000B41606 /* SceneDelegate.swift in Sources */,
+				F75E4D3E283D6E63005D2634 /* EventViewController.swift in Sources */,
+				F75E4D40283D73B2005D2634 /* ReportConflictViewController.swift in Sources */,
 				F71B9FF1283C1104002F4547 /* EventCell.swift in Sources */,
 				F71B9FED283714D4002F4547 /* RegisterViewController.swift in Sources */,
 				F71B9FF9283C21D7002F4547 /* Conflict.swift in Sources */,
