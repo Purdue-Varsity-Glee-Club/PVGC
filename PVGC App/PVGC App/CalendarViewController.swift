@@ -6,20 +6,26 @@
 //
 
 import UIKit
+import Parse
 
 class CalendarViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var date:String = "";
     var eventData:[[String:Any?]] = []
+    var fetchedEvents = [PFObject]()
+    var events:[Event] = []
+    var filteredEvents:[Event] = []
+
     
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6;
+        return filteredEvents.count;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell", for: indexPath) as! EventCell
-        cell.eventText.text = self.date
+        let event = filteredEvents[indexPath.row]
+        cell.eventText.text = event.location
         return cell;
     }
     
@@ -36,9 +42,27 @@ class CalendarViewController: UIViewController, UITableViewDelegate, UITableView
         if let day = components.day, let month = components.month, let year = components.year {
             //print("\(day) \(month) \(year)")
             setDate(day: String(day), month: String(month), year: String(year))
-            eventsTable.reloadData()
+            getEvents(day: String(day), month: String(month), year: String(year))
         }
-        // Do any additional setup after loading the view.
+    
+    }
+    
+    func getEvents(day:String, month:String, year:String){
+        let query = PFQuery(className: "Events")
+        query.limit = 100
+        query.findObjectsInBackground{(events, error) in
+            if events == nil{
+                print(error?.localizedDescription as Any)
+            }else{
+                for event in self.fetchedEvents {
+                    self.events.append(Event(dictionary: event))
+                }
+                let filter = day + "-" + month + "-" + year;
+                self.filteredEvents = EventsAPI.getDateEvents(date: filter, events:self.events)
+                print(self.filteredEvents)
+                self.eventsTable.reloadData()
+            }
+        }
     }
     
     @objc func dateChanged(_ sender:UIDatePicker){
@@ -46,6 +70,7 @@ class CalendarViewController: UIViewController, UITableViewDelegate, UITableView
         if let day = components.day, let month = components.month, let year = components.year {
             //print("\(day) \(month) \(year)")
             setDate(day: String(day), month: String(month), year: String(year))
+            getEvents(day: String(day), month: String(month), year: String(year))
         }
     }
     

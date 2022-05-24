@@ -13,6 +13,9 @@
 		F71B9FED283714D4002F4547 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71B9FEC283714D4002F4547 /* RegisterViewController.swift */; };
 		F71B9FEF283C086D002F4547 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71B9FEE283C086D002F4547 /* CalendarViewController.swift */; };
 		F71B9FF1283C1104002F4547 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71B9FF0283C1104002F4547 /* EventCell.swift */; };
+		F71B9FF4283C1EEA002F4547 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71B9FF3283C1EEA002F4547 /* Networking.swift */; };
+		F71B9FF7283C2028002F4547 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71B9FF6283C2028002F4547 /* Event.swift */; };
+		F71B9FF9283C21D7002F4547 /* Conflict.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71B9FF8283C21D7002F4547 /* Conflict.swift */; };
 		F72B4E152835CC4000B41606 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B4E142835CC4000B41606 /* AppDelegate.swift */; };
 		F72B4E172835CC4000B41606 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B4E162835CC4000B41606 /* SceneDelegate.swift */; };
 		F72B4E192835CC4000B41606 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B4E182835CC4000B41606 /* ViewController.swift */; };
@@ -54,6 +57,9 @@
 		F71B9FEC283714D4002F4547 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		F71B9FEE283C086D002F4547 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		F71B9FF0283C1104002F4547 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		F71B9FF3283C1EEA002F4547 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		F71B9FF6283C2028002F4547 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		F71B9FF8283C21D7002F4547 /* Conflict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conflict.swift; sourceTree = "<group>"; };
 		F72B4E112835CC4000B41606 /* PVGC App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PVGC App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72B4E142835CC4000B41606 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F72B4E162835CC4000B41606 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,9 +126,28 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F71B9FF2283C1EBB002F4547 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F71B9FF3283C1EEA002F4547 /* Networking.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		F71B9FF5283C201C002F4547 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F71B9FF6283C2028002F4547 /* Event.swift */,
+				F71B9FF8283C21D7002F4547 /* Conflict.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		F72B4E082835CC4000B41606 = {
 			isa = PBXGroup;
 			children = (
+				F71B9FF5283C201C002F4547 /* Models */,
+				F71B9FF2283C1EBB002F4547 /* API */,
 				F72B4E132835CC4000B41606 /* PVGC App */,
 				F72B4E2A2835CC4100B41606 /* PVGC AppTests */,
 				F72B4E342835CC4100B41606 /* PVGC AppUITests */,
@@ -415,12 +440,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F71B9FF7283C2028002F4547 /* Event.swift in Sources */,
 				F71B9FEF283C086D002F4547 /* CalendarViewController.swift in Sources */,
 				F72B4E192835CC4000B41606 /* ViewController.swift in Sources */,
 				F72B4E152835CC4000B41606 /* AppDelegate.swift in Sources */,
 				F72B4E172835CC4000B41606 /* SceneDelegate.swift in Sources */,
 				F71B9FF1283C1104002F4547 /* EventCell.swift in Sources */,
 				F71B9FED283714D4002F4547 /* RegisterViewController.swift in Sources */,
+				F71B9FF9283C21D7002F4547 /* Conflict.swift in Sources */,
+				F71B9FF4283C1EEA002F4547 /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
