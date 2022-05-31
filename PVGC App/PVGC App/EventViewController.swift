@@ -19,6 +19,12 @@ class EventViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "conflictReportSegue"){
+            let reportViewController = segue.destination as! ReportConflictViewController
+            reportViewController.event = self.event
+        }
+    }
 
     /*
     // MARK: - Navigation
