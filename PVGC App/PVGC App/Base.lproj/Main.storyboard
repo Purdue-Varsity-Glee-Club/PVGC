@@ -335,7 +335,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="2Uh-NH-lq1">
             <objects>
-                <tabBarController modalPresentationStyle="fullScreen" id="OQ3-9M-3fT" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="mainView" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OQ3-9M-3fT" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="J9m-4V-0SS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -350,7 +350,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eWI-6a-Hst" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="853"/>
+            <point key="canvasLocation" x="138" y="1010"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="rRR-kF-Rlk">

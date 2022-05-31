@@ -12,12 +12,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
+
     @IBOutlet weak var registerButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+
     }
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        if (PFUser.current() != nil){
+//            self.performSegue(withIdentifier: "loginSegue", sender: self)
+//        }
+//    }
 
 
     @IBAction func onLogin(_ sender: Any) {
