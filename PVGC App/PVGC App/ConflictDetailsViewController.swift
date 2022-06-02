@@ -11,6 +11,7 @@ class ConflictDetailsViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var detailsLabel: UILabel!
     @IBOutlet weak var reasonLabel: UILabel!
+    var conflict:Conflict?
     
     var name:String?
     var details:String?

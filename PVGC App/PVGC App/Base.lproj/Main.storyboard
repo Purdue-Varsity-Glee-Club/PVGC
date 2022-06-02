@@ -358,6 +358,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="acceptButton" destination="WwQ-Wq-HRB" id="bqQ-Id-51N"/>
+                                            <outlet property="contactButton" destination="s1T-ou-Dxw" id="Q5z-JQ-YxY"/>
+                                            <outlet property="denyButton" destination="fDr-6t-mMc" id="nwi-9B-hog"/>
                                             <outlet property="detailsLabel" destination="kDu-dC-t4i" id="vgz-kR-xqx"/>
                                             <outlet property="nameLabel" destination="EPE-UL-5NF" id="hIO-CN-7NE"/>
                                             <outlet property="reasonLabel" destination="PEC-Vh-Fz1" id="lxG-Oa-MYS"/>
@@ -432,10 +435,20 @@
                                     <segue destination="bum-Tx-rly" kind="show" identifier="manageConflictSegue" id="WZ4-wW-bj5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3XL-QG-8Rf">
+                                <rect key="frame" x="591" y="276" width="132" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Take Attendance"/>
+                                <connections>
+                                    <segue destination="ahc-NE-Het" kind="show" identifier="attendanceSegue" id="WEO-uN-Uvs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RDS-Le-Aej"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="3XL-QG-8Rf" firstAttribute="top" secondItem="y3C-9g-1rI" secondAttribute="bottom" constant="25" id="3W2-SL-UvG"/>
+                            <constraint firstItem="3XL-QG-8Rf" firstAttribute="centerX" secondItem="y3C-9g-1rI" secondAttribute="centerX" id="8iO-s5-cCH"/>
                             <constraint firstItem="y3C-9g-1rI" firstAttribute="top" secondItem="4qw-dP-1cT" secondAttribute="bottom" constant="30" id="9vS-st-PT9"/>
                             <constraint firstItem="4qw-dP-1cT" firstAttribute="centerX" secondItem="DDj-0V-N7b" secondAttribute="centerX" id="KDb-m4-tV5"/>
                             <constraint firstItem="y3C-9g-1rI" firstAttribute="centerX" secondItem="4qw-dP-1cT" secondAttribute="centerX" id="LrD-28-MIS"/>
@@ -446,6 +459,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="1kr-2O-cyY"/>
                     <connections>
+                        <outlet property="attendanceButton" destination="3XL-QG-8Rf" id="iRX-Mj-5lG"/>
                         <outlet property="editEventButton" destination="y3C-9g-1rI" id="8xn-ic-oF8"/>
                         <outlet property="manageConflictsButton" destination="4qw-dP-1cT" id="UGC-10-9co"/>
                         <outlet property="testLabel" destination="vhy-4Q-GeZ" id="mQP-TA-BH1"/>
@@ -523,7 +537,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eWI-6a-Hst" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="1010"/>
+            <point key="canvasLocation" x="138" y="773"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="rRR-kF-Rlk">
@@ -684,6 +698,22 @@
             <point key="canvasLocation" x="1325" y="4582"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="PLz-dR-POU">
+            <objects>
+                <viewController id="ahc-NE-Het" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AvV-U3-i4Q">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dDo-ZD-XZt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="i7r-w2-t1N"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wh2-15-dIc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1325" y="5300"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="feq-4F-H9t">
             <objects>
                 <viewController id="Yuk-qz-yZy" sceneMemberID="viewController">
@@ -759,7 +789,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r2Q-nv-cmM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1997.65625" y="3847.8515624999995"/>
+            <point key="canvasLocation" x="2114" y="3848"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

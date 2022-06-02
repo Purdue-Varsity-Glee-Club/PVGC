@@ -15,6 +15,7 @@ class EventViewController: UIViewController {
     @IBOutlet weak var manageConflictsButton: UIButton!
     @IBOutlet weak var editEventButton: UIButton!
     
+    @IBOutlet weak var attendanceButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         testLabel.text = event?.location
