@@ -17,7 +17,8 @@ class CalendarViewController: UIViewController, UITableViewDelegate, UITableView
     var filteredEvents:[Event] = []
 
     
-
+    @IBOutlet weak var addEventButton: UIButton!
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filteredEvents.count;
     }
@@ -37,6 +38,13 @@ class CalendarViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var calendar: UIDatePicker!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let user = PFUser.current()
+        let role = user!["role"] as! String
+        if(role == "regular"){
+            self.addEventButton.alpha = 0;
+        }
+        
         eventsTable.delegate = self;
         eventsTable.dataSource = self;
         calendar.preferredDatePickerStyle = .inline;

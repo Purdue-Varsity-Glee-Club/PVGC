@@ -31,6 +31,7 @@ class ViewController: UIViewController {
     @IBAction func onLogin(_ sender: Any) {
         PFUser.logInWithUsername(inBackground: emailTextField.text!, password: passwordField.text!) { (user, error) in
             if(user != nil){
+                let user = PFUser.current()
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             }else{
                 print(error?.localizedDescription)

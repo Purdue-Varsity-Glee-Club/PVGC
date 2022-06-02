@@ -47,47 +47,32 @@ class ReportConflictViewController: UIViewController, UIPickerViewDataSource, UI
     }
     
     @IBAction func onSave(_ sender: Any) {
-        
-//        var event:Event?
-//        var user:PFUser?
-//        var reason:Int?
-//        var contact:[PFUser]?
-//        var details:String?
-//        var status:Int?
-//
-        successfulConflictReport()
 
-//        var conflict = PFObject(className:"Conflicts")
-//        let query = PFQuery(className: "Members")
-//        query.whereKey("role", contains: "manager")
-//        query.findObjectsInBackground{(managers: [PFObject]?, error) in
-//            if managers == nil{
-//                print(error?.localizedDescription as Any)
-//            }else{
-//                conflict["contact"] = managers
-//            }
-//        }
-//
-//
-//        conflict["user"] = PFUser.current
-//        conflict["event"] = self.event?.object
-//        conflict["reason"] = self.conflictOptions.selectedRow(inComponent: 0)
-//        conflict["details"] = self.detailsField.text
-//        conflict["status"] = 2;
-//
-////
-//        // Saves the new object.
-//        conflict.saveInBackground {
-//          (success: Bool, error: Error?) in
-//          if (success) {
-//              self.successfulConflictReport()
-//              self.dismiss(animated: true, completion: nil)
-//          } else {
-//              print(error?.localizedDescription)
-//          }
-//        }
-        
-        
+        var conflict = PFObject(className:"Conflicts")
+        let query = PFQuery(className: "Members")
+        query.whereKey("role", contains: "manager")
+        query.findObjectsInBackground{(managers: [PFObject]?, error) in
+            if managers == nil{
+                print(error?.localizedDescription as Any)
+            }else{
+                conflict["contact"] = managers
+                conflict["user"] = PFUser.current()
+                conflict["event"] = self.event?.object
+                conflict["reason"] = self.conflictOptions.selectedRow(inComponent: 0)
+                conflict["details"] = self.detailsField.text
+                conflict["status"] = 2;
+                // Saves the new object.
+                conflict.saveInBackground {
+                  (success: Bool, error: Error?) in
+                  if (success) {
+                      self.successfulConflictReport()
+//                      self.dismiss(animated: true, completion: nil)
+                  } else {
+                      print(error?.localizedDescription)
+                  }
+                }
+            }
+        }
     }
     
     func successfulConflictReport(){
