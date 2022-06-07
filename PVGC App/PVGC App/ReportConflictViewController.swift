@@ -83,7 +83,6 @@ class ReportConflictViewController: UIViewController, UIPickerViewDataSource, UI
             self.saveButton.isEnabled = false;
             self.updateButton.alpha = 1;
         }
-    
     }
     
 

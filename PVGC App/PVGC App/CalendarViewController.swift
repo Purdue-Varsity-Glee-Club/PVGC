@@ -61,6 +61,7 @@ class CalendarViewController: UIViewController, UITableViewDelegate, UITableView
     
     func getEvents(day:String, month:String, year:String){
         let query = PFQuery(className: "Events")
+        query.includeKey("attendance")
         query.limit = 100
         query.findObjectsInBackground{(events, error) in
             if events == nil{

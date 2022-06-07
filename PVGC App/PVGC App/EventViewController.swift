@@ -10,6 +10,7 @@ import Parse
 
 class EventViewController: UIViewController {
 
+    @IBOutlet weak var attenanceTicker: UISwitch!
     @IBOutlet weak var testLabel: UILabel!
     var event:Event?
     @IBOutlet weak var manageConflictsButton: UIButton!
@@ -27,6 +28,33 @@ class EventViewController: UIViewController {
         }
         // Do any additional setup after loading the view.
     }
+    @IBAction func onTicker(_ sender: Any) {
+        let eventObject = self.event?.object
+        var users = eventObject!["attendance"] as! [PFUser]
+        if(self.attenanceTicker.isOn){
+            users.append(PFUser.current()!)
+            eventObject!["attendance"] = users;
+        }else{
+            var i = 0;
+            for user in users{
+                if user == PFUser.current(){
+                    users.remove(at: i)
+                    break;
+                }
+                i+=1;
+            }
+            eventObject?["attendance"] = users
+        }
+        
+        eventObject?.saveInBackground{(success, error) in
+            if(success == nil){
+                print(error!.localizedDescription as String)
+            }else{
+                print("Successfully Saved")
+            }
+        }
+        
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -39,6 +67,10 @@ class EventViewController: UIViewController {
             case "manageConflictSegue":
                 let conflictsViewController = segue.destination as! ConflictsViewController
                 conflictsViewController.event = self.event;
+                break;
+            case "attendanceSegue":
+                let attendanceViewController = segue.destination as! AttendanceViewController
+                attendanceViewController.event = self.event;
                 break;
             case .none: break
             case .some(_):break
