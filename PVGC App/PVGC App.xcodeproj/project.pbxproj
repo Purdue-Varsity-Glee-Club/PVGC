@@ -16,6 +16,7 @@
 		F71B9FF4283C1EEA002F4547 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71B9FF3283C1EEA002F4547 /* Networking.swift */; };
 		F71B9FF7283C2028002F4547 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71B9FF6283C2028002F4547 /* Event.swift */; };
 		F71B9FF9283C21D7002F4547 /* Conflict.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71B9FF8283C21D7002F4547 /* Conflict.swift */; };
+		F726BFA5285A4B3E0001EBB5 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F726BFA4285A4B3E0001EBB5 /* AddEventViewController.swift */; };
 		F72A67872847E59500F1D88D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72A67862847E59500F1D88D /* HomeViewController.swift */; };
 		F72A67892847F07B00F1D88D /* ConflictCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72A67882847F07B00F1D88D /* ConflictCell.swift */; };
 		F72A678B2847F3F400F1D88D /* ConflictsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72A678A2847F3F400F1D88D /* ConflictsViewController.swift */; };
@@ -31,6 +32,7 @@
 		F72B4E2C2835CC4100B41606 /* PVGC_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B4E2B2835CC4100B41606 /* PVGC_AppTests.swift */; };
 		F72B4E362835CC4100B41606 /* PVGC_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B4E352835CC4100B41606 /* PVGC_AppUITests.swift */; };
 		F72B4E382835CC4100B41606 /* PVGC_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B4E372835CC4100B41606 /* PVGC_AppUITestsLaunchTests.swift */; };
+		F7316D96286A1F9C004CEAEF /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7316D95286A1F9C004CEAEF /* SectionViewController.swift */; };
 		F75E4D3E283D6E63005D2634 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75E4D3D283D6E63005D2634 /* EventViewController.swift */; };
 		F75E4D40283D73B2005D2634 /* ReportConflictViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75E4D3F283D73B2005D2634 /* ReportConflictViewController.swift */; };
 /* End PBXBuildFile section */
@@ -68,6 +70,7 @@
 		F71B9FF3283C1EEA002F4547 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		F71B9FF6283C2028002F4547 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		F71B9FF8283C21D7002F4547 /* Conflict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conflict.swift; sourceTree = "<group>"; };
+		F726BFA4285A4B3E0001EBB5 /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
 		F72A67862847E59500F1D88D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "PVGC App/HomeViewController.swift"; sourceTree = SOURCE_ROOT; };
 		F72A67882847F07B00F1D88D /* ConflictCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConflictCell.swift; sourceTree = "<group>"; };
 		F72A678A2847F3F400F1D88D /* ConflictsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConflictsViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +90,7 @@
 		F72B4E312835CC4100B41606 /* PVGC AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PVGC AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72B4E352835CC4100B41606 /* PVGC_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVGC_AppUITests.swift; sourceTree = "<group>"; };
 		F72B4E372835CC4100B41606 /* PVGC_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVGC_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F7316D95286A1F9C004CEAEF /* SectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SectionViewController.swift; path = "/Users/eliel/Projects/PVGC/PVGC App/PVGC App/SectionViewController.swift"; sourceTree = "<absolute>"; };
 		F75E4D3D283D6E63005D2634 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		F75E4D3F283D73B2005D2634 /* ReportConflictViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportConflictViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,6 +197,8 @@
 				F72A67862847E59500F1D88D /* HomeViewController.swift */,
 				F72B4E182835CC4000B41606 /* ViewController.swift */,
 				F72B4E1A2835CC4000B41606 /* Main.storyboard */,
+				F726BFA4285A4B3E0001EBB5 /* AddEventViewController.swift */,
+				F7316D95286A1F9C004CEAEF /* SectionViewController.swift */,
 				F75E4D3F283D73B2005D2634 /* ReportConflictViewController.swift */,
 				F71B9FF0283C1104002F4547 /* EventCell.swift */,
 				F72A67882847F07B00F1D88D /* ConflictCell.swift */,
@@ -469,8 +475,10 @@
 				F71B9FEF283C086D002F4547 /* CalendarViewController.swift in Sources */,
 				F72B4E192835CC4000B41606 /* ViewController.swift in Sources */,
 				F72A6791284E8B5800F1D88D /* AttendanceCell.swift in Sources */,
+				F7316D96286A1F9C004CEAEF /* SectionViewController.swift in Sources */,
 				F72B4E152835CC4000B41606 /* AppDelegate.swift in Sources */,
 				F72B4E172835CC4000B41606 /* SceneDelegate.swift in Sources */,
+				F726BFA5285A4B3E0001EBB5 /* AddEventViewController.swift in Sources */,
 				F75E4D3E283D6E63005D2634 /* EventViewController.swift in Sources */,
 				F75E4D40283D73B2005D2634 /* ReportConflictViewController.swift in Sources */,
 				F72A67892847F07B00F1D88D /* ConflictCell.swift in Sources */,

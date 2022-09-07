@@ -14,7 +14,6 @@ class ConflictCell: UITableViewCell {
     @IBOutlet weak var acceptButton: UIButton!
     @IBOutlet weak var reasonLabel: UILabel!
     @IBOutlet weak var denyButton: UIButton!
-    @IBOutlet weak var detailsLabel: UILabel!
     var conflict:Conflict?
     
     override func awakeFromNib() {

@@ -13,13 +13,14 @@ class EventViewController: UIViewController {
     @IBOutlet weak var attenanceTicker: UISwitch!
     @IBOutlet weak var testLabel: UILabel!
     var event:Event?
+    @IBOutlet weak var eventDetails: UITextView!
     @IBOutlet weak var manageConflictsButton: UIButton!
     @IBOutlet weak var editEventButton: UIButton!
     
     @IBOutlet weak var attendanceButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        testLabel.text = event?.location
+        eventDetails.text = event?.location
         let user = PFUser.current()
         let role = user!["role"]
         if(role as! String == "regular"){
@@ -32,7 +33,7 @@ class EventViewController: UIViewController {
         let eventObject = self.event?.object
         var users = eventObject!["attendance"] as! [PFUser]
         if(self.attenanceTicker.isOn){
-            users.append(PFUser.current()!)
+  // TODO          users.append(PFUser.current()!)
             eventObject!["attendance"] = users;
         }else{
             var i = 0;
@@ -77,7 +78,10 @@ class EventViewController: UIViewController {
         }
         
     }
-
+    @IBAction func onBackButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

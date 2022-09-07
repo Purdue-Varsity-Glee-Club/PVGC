@@ -18,14 +18,18 @@ class AttendanceViewController: UIViewController, UITableViewDelegate, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "attendanceCell") as! AttendanceCell
         //let user = self.users?[indexPath.row]
         let user = self.users[indexPath.row]
-        cell.nameLabel.text = (self.users[indexPath.row]["firstname"] as! String) + " " + (self.users[indexPath.row]["lastname"] as! String)
+        cell.nameLabel.text = self.users[indexPath.row]["name"] as! String
         cell.event = event
         cell.user = self.users[indexPath.row]
-        for currentUser in (self.event?.object!["attendance"] as! [PFObject]){
-            if(currentUser == user){
-                cell.attendanceCheck.isOn = true
+        if(self.event?.attendance != nil){
+            for currentUser in (self.event?.object!["attendance"] as! [PFObject]){
+//                print("User \(user.objectId) -- CurrentUser \(currentUser.objectId)")
+                if(currentUser.objectId == user.objectId){
+                    cell.attendanceCheck.isOn = true
+                }
             }
-            
+        }else{
+            cell.attendanceCheck.isOn = false
         }
         
         return cell;
@@ -48,6 +52,7 @@ class AttendanceViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func loadAttendance(){
         let query = PFQuery(className: "Members")
+        query.includeKey("attendance")
         query.findObjectsInBackground{(users, error) in
             if(users == nil){
                 print(error?.localizedDescription)
@@ -76,7 +81,7 @@ class AttendanceViewController: UIViewController, UITableViewDelegate, UITableVi
         let temp = self.filteredUsers as [PFObject]
         for user in temp{
             let nameText = String.lowercased(name)()
-            let fullname = (String.lowercased((user["firstname"] as! String) + " " + (user["lastname"] as! String)))
+            let fullname = String.lowercased(user["name"] as! String)
             if fullname().contains(nameText){
                 newUsers.append(user)
             }

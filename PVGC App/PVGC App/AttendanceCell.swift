@@ -20,21 +20,21 @@ class AttendanceCell: UITableViewCell {
         // Initialization code
     }
     @IBAction func onTicker(_ sender: Any) {
-        let eventObject = self.event?.object
-        var users = eventObject!["attendance"] as! [PFUser]
+        var eventObject = self.event?.object
+        var nonEmptyUsers = eventObject!["attendance"] as! [PFObject]
         if(self.attendanceCheck.isOn){
-            users.append(PFUser.current()!)
-            eventObject!["attendance"] = users;
+            nonEmptyUsers.append(user!)
+            eventObject!["attendance"] = nonEmptyUsers;
         }else{
             var i = 0;
-            for user in users{
+            for user in nonEmptyUsers{
                 if user == PFUser.current(){
-                    users.remove(at: i)
+                    nonEmptyUsers.remove(at: i)
                     break;
                 }
                 i+=1;
             }
-            eventObject?["attendance"] = users
+            eventObject?["attendance"] = nonEmptyUsers
         }
         
         eventObject?.saveInBackground{(success, error) in
@@ -44,8 +44,8 @@ class AttendanceCell: UITableViewCell {
                 print("Successfully Saved")
             }
         }
-        
     }
+    
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

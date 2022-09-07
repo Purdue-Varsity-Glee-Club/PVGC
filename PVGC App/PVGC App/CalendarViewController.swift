@@ -47,6 +47,7 @@ class CalendarViewController: UIViewController, UITableViewDelegate, UITableView
         
         eventsTable.delegate = self;
         eventsTable.dataSource = self;
+        eventsTable.separatorColor = UIColor.clear;
         calendar.preferredDatePickerStyle = .inline;
         calendar.addTarget(self, action: #selector(dateChanged(_:)), for: .valueChanged)
         let components = Calendar.current.dateComponents([.year, .month, .day], from: calendar.date)

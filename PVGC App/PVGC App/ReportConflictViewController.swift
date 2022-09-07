@@ -15,7 +15,8 @@ class ReportConflictViewController: UIViewController, UIPickerViewDataSource, UI
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var detailsField: UITextField!
     @IBOutlet weak var updateButton: UIButton!
-    
+    @IBOutlet weak var conflictOptions: UIPickerView!
+
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1;
@@ -31,7 +32,6 @@ class ReportConflictViewController: UIViewController, UIPickerViewDataSource, UI
     
     var options:[String] = ["Arriving Late","Not Attending", "Class Conflict", "Custom"]
     
-    @IBOutlet weak var conflictOptions: UIPickerView!
     
     
     override func viewDidLoad() {

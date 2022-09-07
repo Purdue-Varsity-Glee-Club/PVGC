@@ -9,10 +9,12 @@ import UIKit
 
 class EventCell: UITableViewCell {
 
+    @IBOutlet weak var view: UIView!
     @IBOutlet weak var eventText: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.view.layer.cornerRadius = 30;
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

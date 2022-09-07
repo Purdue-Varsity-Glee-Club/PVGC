@@ -69,9 +69,7 @@ class ConflictsViewController: UIViewController, UITableViewDelegate, UITableVie
         }
         
         cell.nameLabel.text = conflict.name
-        cell.reasonLabel.text = reason
-        cell.detailsLabel.text = conflict.details
-        
+        cell.reasonLabel.text = reason        
         /* Sample text to test long responses
          
          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
@@ -111,6 +109,9 @@ class ConflictsViewController: UIViewController, UITableViewDelegate, UITableVie
     }
         
 
+    @IBAction func onBackButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil);
+    }
     /*
     // MARK: - Navigation
 

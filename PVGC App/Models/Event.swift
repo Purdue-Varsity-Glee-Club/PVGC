@@ -15,6 +15,7 @@ class Event{
     var duration:String?
     var dressCode:String?
     var details:String?
+    var attendance:[PFObject]?
     var object:PFObject?
     
     init(dictionary:PFObject){
@@ -25,6 +26,7 @@ class Event{
         self.duration = dictionary["duration"] as? String
         self.dressCode = dictionary["dressCode"] as? String
         self.details = dictionary["details"] as? String
+        self.attendance = dictionary["attendance"] as? [PFObject]
         self.object = dictionary
     }
 }
