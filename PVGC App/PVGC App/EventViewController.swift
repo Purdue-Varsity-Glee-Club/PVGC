@@ -58,24 +58,24 @@ class EventViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        let id = segue.identifier;
-        switch(id){
-            case "conflictReportSegue":
-                let reportViewController = segue.destination as! ReportConflictViewController
-                reportViewController.event = self.event
-                break;
-            case "manageConflictSegue":
-                let conflictsViewController = segue.destination as! ConflictsViewController
-                conflictsViewController.event = self.event;
-                break;
-            case "attendanceSegue":
-                let attendanceViewController = segue.destination as! AttendanceViewController
-                attendanceViewController.event = self.event;
-                break;
-            case .none: break
-            case .some(_):break
-        }
+//        
+//        let id = segue.identifier;
+//        switch(id){
+//            case "conflictReportSegue":
+//                let reportViewController = segue.destination as! ReportConflictViewController
+//                reportViewController.event = self.event
+//                break;
+//            case "manageConflictSegue":
+//                let conflictsViewController = segue.destination as! ConflictsViewController
+//                conflictsViewController.event = self.event;
+//                break;
+//            case "attendanceSegue":
+//                let attendanceViewController = segue.destination as! AttendanceViewController
+//                attendanceViewController.event = self.event;
+//                break;
+//            case .none: break
+//            case .some(_):break
+//        }
         
     }
     @IBAction func onBackButton(_ sender: Any) {

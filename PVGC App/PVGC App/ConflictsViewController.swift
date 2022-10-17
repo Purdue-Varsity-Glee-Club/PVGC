@@ -83,29 +83,29 @@ class ConflictsViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "loadUserConflictSegue"){
-            let detailsViewController = segue.destination as! ConflictDetailsViewController
-            if let indexPath = sender as? IndexPath {
-                let conflict = self.conflicts[indexPath.row]
-                var reason:String?
-                switch(conflict.reason){
-                case 0:
-                    reason = "Arriving Late"
-                    break;
-                case 1:
-                    reason = "Class Conflict"
-                    break;
-                case 2:
-                    reason = "Personal Conflict/Other"
-                    break;
-                default:
-                    break;
-                }
-                detailsViewController.reason = reason
-                detailsViewController.name = conflict.name
-                detailsViewController.details = conflict.details
-            }
-        }
+//        if(segue.identifier == "loadUserConflictSegue"){
+//            let detailsViewController = segue.destination as! ConflictDetailsViewController
+//            if let indexPath = sender as? IndexPath {
+//                let conflict = self.conflicts[indexPath.row]
+//                var reason:String?
+//                switch(conflict.reason){
+//                case 0:
+//                    reason = "Arriving Late"
+//                    break;
+//                case 1:
+//                    reason = "Class Conflict"
+//                    break;
+//                case 2:
+//                    reason = "Personal Conflict/Other"
+//                    break;
+//                default:
+//                    break;
+//                }
+//                detailsViewController.reason = reason
+//                detailsViewController.name = conflict.name
+//                detailsViewController.details = conflict.details
+//            }
+//        }
     }
         
 
